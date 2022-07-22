@@ -30,7 +30,7 @@ public class Torneo {
     /**
      * 
      */
-    private void equipo4. Equipo;
+    private Equipo equipo4;
 
     /**
      * 
