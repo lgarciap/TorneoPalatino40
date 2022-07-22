@@ -57,12 +57,33 @@ public class Principal {
             teclado.nextLine();
             palatino.llenarEquipo(i+1, nombre, goles, lugar, tirosEsquina, ganados, perdidos, tirosAgol, amarillas, rojas, faltas);
         }
-        System.out.println("Información de equipos: ");
+        System.out.println("\n+==========================+");
+        System.out.println(  "|Información de equipos:   | ");
+        System.out.println("+==========================+\n");
         System.out.println(palatino.getEquipo1());
         System.out.println(palatino.getEquipo2());
         System.out.println(palatino.getEquipo3());
         System.out.println(palatino.getEquipo4());
         System.out.println(palatino.getEquipo5());
+
+        System.out.println("\n+==========================+");
+        System.out.println(  "|Información del torneo:   | ");
+        System.out.println("+==========================+\n");
+        
+        System.out.println("Cantidad de Goles: "+palatino.totalGoles());
+        System.out.println("Cantidad de Tiros de Esquina: "+palatino.totalTirosEsquina());
+        System.out.println("Cantidad de Tarjetas Amarillas: "+palatino.totalAmarillas());
+        System.out.println("Cantidad de Tarjetas Rojas: "+palatino.totalRojas());
+        
+        System.out.println("\n+============================+");
+        System.out.println(  "|Información de un equipo:   | ");
+        System.out.println("+============================+\n");
+
+        System.out.println("Ingrese el nombre del equipo: ");
+        String eq = teclado.nextLine();
+        String datos = palatino.mostrarEstadisticasEquipo(eq);
+        System.out.println(datos);
+
         
     }
 
