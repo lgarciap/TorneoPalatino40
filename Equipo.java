@@ -1,265 +1,124 @@
-
-import java.util.*;
-
-/**
- * 
- */
 public class Equipo {
+    private String nombre;
+    private int goles;
+    private int lugar;
+    private int tirosEsquina;
+    private int ganados;
+    private int perdidos;
+    private int tirosAgol;
+    private int amarillas;
+    private int rojas;
+    private int faltas;
 
     /**
      * Default constructor
      */
     public Equipo() {
+        nombre = "";
+        goles = 0;
+        lugar = 0;
+        tirosEsquina = 0;
+        ganados = 0;
+        perdidos = 0;
+        tirosAgol = 0;
+        amarillas = 0;
+        rojas = 0;
+        faltas = 0;
     }
 
-    /**
-     * 
-     */
-    private String nombre;
-
-    /**
-     * 
-     */
-    private String nombre;
-
-    /**
-     * 
-     */
-    private int goles;
-
-    /**
-     * 
-     */
-    private int lugar;
-
-    /**
-     * 
-     */
-    private int tirosEsquina;
-
-    /**
-     * 
-     */
-    private int ganados;
-
-    /**
-     * 
-     */
-    private int perdidos;
-
-    /**
-     * 
-     */
-    private int tirosAgol;
-
-    /**
-     * 
-     */
-    private int amarillas;
-
-    /**
-     * 
-     */
-    private int rojas;
-
-    /**
-     * 
-     */
-    private int faltas;
-
-    /**
-     * @return
-     */
     public String getNombre() {
-        // TODO implement here
-        return "";
+        return this.nombre;
     }
 
-    /**
-     * @param value
-     */
-    public void setNombre(String value) {
-        // TODO implement here
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    /**
-     * @return
-     */
-    public String getNombre() {
-        // TODO implement here
-        return "";
-    }
-
-    /**
-     * @param value
-     */
-    public void setNombre(String value) {
-        // TODO implement here
-    }
-
-    /**
-     * 
-     */
-    public void Equipo() {
-        // TODO implement here
-    }
-
-    /**
-     * @return
-     */
-    public String getNombre() {
-        // TODO implement here
-        return "";
-    }
-
-    /**
-     * @param value
-     */
-    public void setNombre(String value) {
-        // TODO implement here
-    }
-
-    /**
-     * @return
-     */
     public int getGoles() {
-        // TODO implement here
-        return 0;
+        return this.goles;
     }
 
-    /**
-     * @param value
-     */
-    public void setGoles(int value) {
-        // TODO implement here
+    public void setGoles(int goles) {
+        this.goles = goles;
     }
 
-    /**
-     * @return
-     */
     public int getLugar() {
-        // TODO implement here
-        return 0;
+        return this.lugar;
     }
 
-    /**
-     * @param value
-     */
-    public void setLugar(int value) {
-        // TODO implement here
+    public void setLugar(int lugar) {
+        this.lugar = lugar;
     }
 
-    /**
-     * @return
-     */
     public int getTirosEsquina() {
-        // TODO implement here
-        return 0;
+        return this.tirosEsquina;
     }
 
-    /**
-     * @param value
-     */
-    public void setTirosEsquina(int value) {
-        // TODO implement here
+    public void setTirosEsquina(int tirosEsquina) {
+        this.tirosEsquina = tirosEsquina;
     }
 
-    /**
-     * @return
-     */
     public int getGanados() {
-        // TODO implement here
-        return 0;
+        return this.ganados;
     }
 
-    /**
-     * @param value
-     */
-    public void setGanados(int value) {
-        // TODO implement here
+    public void setGanados(int ganados) {
+        this.ganados = ganados;
     }
 
-    /**
-     * @return
-     */
     public int getPerdidos() {
-        // TODO implement here
-        return 0;
+        return this.perdidos;
     }
 
-    /**
-     * @param value
-     */
-    public void setPerdidos(int value) {
-        // TODO implement here
+    public void setPerdidos(int perdidos) {
+        this.perdidos = perdidos;
     }
 
-    /**
-     * @return
-     */
-    public int getRojas() {
-        // TODO implement here
-        return 0;
-    }
-
-    /**
-     * @param value
-     */
-    public void setRojas(int value) {
-        // TODO implement here
-    }
-
-    /**
-     * @return
-     */
-    public int getAmarillas() {
-        // TODO implement here
-        return 0;
-    }
-
-    /**
-     * @param value
-     */
-    public void setAmarillas(int value) {
-        // TODO implement here
-    }
-
-    /**
-     * @return
-     */
     public int getTirosAgol() {
-        // TODO implement here
-        return 0;
+        return this.tirosAgol;
     }
 
-    /**
-     * @param value
-     */
-    public void setTirosAgol(int value) {
-        // TODO implement here
+    public void setTirosAgol(int tirosAgol) {
+        this.tirosAgol = tirosAgol;
     }
 
-    /**
-     * @return
-     */
+    public int getAmarillas() {
+        return this.amarillas;
+    }
+
+    public void setAmarillas(int amarillas) {
+        this.amarillas = amarillas;
+    }
+
+    public int getRojas() {
+        return this.rojas;
+    }
+
+    public void setRojas(int rojas) {
+        this.rojas = rojas;
+    }
+
     public int getFaltas() {
-        // TODO implement here
-        return 0;
+        return this.faltas;
     }
 
-    /**
-     * @param value
-     */
-    public void setFaltas(int value) {
-        // TODO implement here
+    public void setFaltas(int faltas) {
+        this.faltas = faltas;
     }
-
-    /**
-     * @return
-     */
+   
+   @Override
     public String toString() {
-        // TODO implement here
-        return "";
+        return "{" +
+            " nombre='" + getNombre() + "'" +
+            "\ngoles='" + getGoles() + "'" +
+            "\nlugar='" + getLugar() + "'" +
+            "\ntirosEsquina='" + getTirosEsquina() + "'" +
+            "\nganados='" + getGanados() + "'" +
+            "\nperdidos='" + getPerdidos() + "'" +
+            "\ntirosAgol='" + getTirosAgol() + "'" +
+            "\namarillas='" + getAmarillas() + "'" +
+            "\nrojas='" + getRojas() + "'" +
+            "\nfaltas='" + getFaltas() + "'" +
+            "}";
     }
-
 }
